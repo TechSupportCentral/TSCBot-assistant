@@ -10,7 +10,7 @@ module.exports = {
     discord: {
         token: 'GET',
         prefix: '!',
-        watching: 'TSC',
+        activity: 'TSC',
     },
 
 

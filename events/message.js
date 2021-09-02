@@ -1,4 +1,4 @@
-const customschema = require('../schemas/custom-commands');
+
 
 module.exports = (client, message) => {
     
