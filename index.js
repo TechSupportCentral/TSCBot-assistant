@@ -56,7 +56,6 @@ const {dcinvites} = require(`./dcinvites.json`)
 
 // Mongo db definiton
 const mongoose = require('mongoose')
-const customschema = require('./schemas/custom-commands')
 client.player = new Player(client);
 client.config = require('./config/bot');
 client.emotes = client.config.emojis;
