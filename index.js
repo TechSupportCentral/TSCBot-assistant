@@ -50,6 +50,8 @@ const {everyone} = require(`./Everyone.json`)
 
 const {dcinvites} = require(`./dcinvites.json`)
 
+const customschema = require('./schemas/custom-commands')
+
 
 
 
