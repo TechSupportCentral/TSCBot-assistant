@@ -1,4 +1,4 @@
-const customschema = require('../schemas/custom-commands');
+
 
 module.exports = (client, message) => {
     async function yup() {
@@ -9,8 +9,8 @@ module.exports = (client, message) => {
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(command));
     if (cmd) cmd.execute(client, message, args)
-    const data = await customschema.findOne({ Guild: message.guild.id, Command: command});
-    if(data) message.channel.send(data.Response)
+    
+    
 }   
     yup()
 };
