@@ -1,6 +1,6 @@
 
 
-const BypassroleandstaffID = '850684245927788554'
+const BypassroleandstaffID = '892095942969413634'
 const spteamstaffchannel =  `824065058388181013`
 const modtalk = `824057837491453982`
 const botdevelopment = `824216769442218004`
