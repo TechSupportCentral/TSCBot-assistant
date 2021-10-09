@@ -174,13 +174,13 @@ client.on("message", async (message) => {
 
 		 
 		  
-		  console.log(`Activity  Point given: ${message.author.tag}`)
+		  console.log(`Activity level up: ${message.author.tag}`)
 
 
 		  let channelID =  stafflogs
 	let logdest = new discord.MessageEmbed()
-		.setTitle(`Activity Point given`)
-		.setDescription(` ${message.author.tag} Got a new Activity Point!`)
+		.setTitle(`Activity Level up`)
+		.setDescription(` ${message.author.tag} has gained a higher activity level`)
 		.setColor("BLUE")
 		.setTimestamp()
 	client.channels.cache.get(channelID).send(logdest)
