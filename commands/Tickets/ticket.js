@@ -45,14 +45,14 @@ module.exports = {
           channelYes.messages.fetch().then(async (messages) => {
 	const final = messages.array().reverse().map(yes => `${new Date(yes.createdAt).toLocaleString('en-US')} - ${yes.author.tag}: ${yes.attachments.size > 0 ? yes.attachments.first().proxyURL : yes.content}`).join('\n');
           let response;
-          const logchannel = '824692900772315196'
+         
 
           const logembed = new discord.MessageEmbed()
           .setColor('BLUE')
           .setDescription(`Ticket closed : ${message.channel.name} closed at : ${new Date} `);
           
           
-          message.channels.cache.get(logchannel).send(logembed)
+          message.channels.cache.get('824692900772315196').send(logembed)
 
 	try {
 	response = await sourcebin.create([
