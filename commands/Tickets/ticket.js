@@ -105,3 +105,12 @@ module.exports = {
       });
   },
 };
+
+const logchannel = '824692900772315196'
+
+const logembed = new discord.MessageEmbed()
+.setColor('BLUE')
+.setDescription(`Ticket closed : ${message.channel.name} closed at : ${new Date} `);
+
+
+message.channels.cache.get(logchannel).send(logembed)
