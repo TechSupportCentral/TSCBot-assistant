@@ -49,7 +49,7 @@ module.exports = {
 
           const logembed = new discord.MessageEmbed()
           .setColor('BLUE')
-          .setDescription(`Ticket closed : ${userid.username} : ${response.url} `);
+          .setDescription(`Ticket closed : ${userid.username} `);
           
           
           client.channels.cache.get('824692900772315196').send(logembed)
