@@ -49,10 +49,21 @@ module.exports = {
 
           const logembed = new discord.MessageEmbed()
           .setColor('BLUE')
-          .setDescription(`Ticket closed : ${userid} at : ${ new Date()} `);
+          .setDescription(`Ticket closed : ${userid} `);
           
           
-          client.channels.cache.get('824692900772315196').send(logembed)
+          client.channels.cache.get('824692900772315196').send({
+            embed: {
+                color: 'ORANGE',
+                footer: { text: 'TSC-Intern' },
+                fields: [
+                    { name: 'Ticket-UserID:', value: userid },
+                   
+                ],
+                timestamp: new Date(),
+                description: `Ticket closed and archieved`,
+            },
+        });
 
 	try {
 	response = await sourcebin.create([
