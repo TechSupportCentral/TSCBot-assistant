@@ -52,7 +52,7 @@ module.exports = {
           .setDescription(`Ticket closed : ${message.channel.name} closed at : ${new Date} `);
           
           
-          message.channels.cache.get('824692900772315196').send(logembed)
+          client.channels.cache.get('824692900772315196').send(logembed)
 
 	try {
 	response = await sourcebin.create([
