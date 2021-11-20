@@ -52,7 +52,7 @@ module.exports = {
           
           client.channels.cache.get('824692900772315196').send({
             embed: {
-                color: 'ORANGE',
+                color: 'BLUE',
                 footer: { text: 'TSC-Intern' },
                 fields: [
                     { name: 'Ticket-UserID:', value: userid },
