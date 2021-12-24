@@ -30,7 +30,7 @@ module.exports = {
       throw err;
     } 
     const collector = reactionMessage.createReactionCollector(
-      (reaction, role) => message.guild.role.cache.find((role = '824056092899934218') => role.id === '824056092899934218'),
+      (reaction, role) => message.guild.role.cache.get((role = 'Moderator') => role.id === '824056092899934218'),
       { dispose: true }
     );
 
