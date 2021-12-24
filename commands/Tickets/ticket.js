@@ -30,17 +30,17 @@ module.exports = {
       throw err;
     } 
     const collector = reactionMessage.createReactionCollector(
-      (reaction, role) => message.guild.role.cache.get((role = 'Moderator') => role.id === '824056092899934218'),
+      (reaction, user) => message.guild.members.cache.find((member) => member.id === user.id).hasPermission("KICK_MEMBERS"),
       { dispose: true }
     );
 
-    collector.on("collect", (reaction, role) => {
+    collector.on("collect", (reaction, member) => {
       switch (reaction.emoji.name) {
         case "🔒":
           channelYes.updateOverwrite(message.author, { SEND_MESSAGES: false });
           break;
         case "⛔":
-	let ohyes = role.id
+	let ohyes = member.id
           channelYes.send("this ticket is going to be deleted in **5 seconds** ticket will be autosaved");
           channelYes.messages.fetch().then(async (messages) => {
 	const final = messages.array().reverse().map(yes => `${new Date(yes.createdAt).toLocaleString('en-US')} - ${yes.author.tag}: ${yes.attachments.size > 0 ? yes.attachments.first().proxyURL : yes.content}`).join('\n');
