@@ -30,7 +30,7 @@ module.exports = {
       throw err;
     } 
     const collector = reactionMessage.createReactionCollector(
-      (reaction, user) => message.guild.members.cache.find((member) => member.id === user.id).hasPermission("ADMINISTRATOR"),
+      (reaction, user) => message.guild.members.cache.find((member) => member.id === '824056092899934218'),
       { dispose: true }
     );
 
