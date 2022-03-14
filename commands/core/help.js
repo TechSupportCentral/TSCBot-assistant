@@ -23,7 +23,7 @@ module.exports = {
                         { name: 'Music Filters', value: client.filters.map((x) => '`' + x + '`').join(', ') },
                     ],
                     timestamp: new Date(),
-                    description: `To use filters, ${client.config.discord.prefix}filter (the filter). Example : ${client.config.discord.prefix}filter 8D.`,
+                    description: `**NOTE:** If you're looking for the mainbot's commands, use \`!commands\` instead of \`!help\`.\n\nTo use filters, ${client.config.discord.prefix}filter (the filter). Example : ${client.config.discord.prefix}filter 8D.`,
                 },
             });
         } else {
