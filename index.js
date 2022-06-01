@@ -86,10 +86,10 @@ fs.readdirSync('./commands').forEach(dirs => {
 
 //captcha 
 
-client.on('guildMemberAdd', (member) => {
+client.on('guildMemberAdd', (message) => {
 	client.member.send(`please verificate that you are not a robot  by sending me back these numbers:  ${member.id}`)
 
-	if (member.content = member.id) {
+	if (message.content = member.id) {
 
 		member.role.add('testvalidation')
 	}
