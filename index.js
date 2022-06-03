@@ -95,6 +95,15 @@ client.on('guildMemberAdd', (message) => {
 	}
 });
 
+//if debug test passed 
+if (!message.content = member.id) {
+const timeoutdef = 9500000
+set timeout = timeoutdef => {
+client.guild.user
+kick(member.id)
+client.channels.cache.get('chanID').send(`Captcha not passed account kicked ${member.tag)`)
+
+});
 
 //activity points system
 
