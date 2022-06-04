@@ -1,11 +1,6 @@
 
 
 const BypassroleandstaffID = '892095942969413634'
-const spteamstaffchannel =  `824065058388181013`
-const modtalk = `824057837491453982`
-const botdevelopment = `824216769442218004`
-const botcommands = `824326748426469396`
-const Ownerarea = `824066908097740910`
 const ticketcreate =  '824684376398233670'
 	const suggestions =  '824926277868978186'
 	const general =  '824042976371277888'
@@ -16,25 +11,10 @@ const ticketcreate =  '824684376398233670'
 	const funbots =  '832535838289297408'
 	const supportteam = '824065058388181013'
 	const bump =  '824185956549787659'
-	let generalsupport =  `824059680905101333`
-let gamingsupport =  `824059755935957023`
-let softwaresupport =  `824059831513907200`
-let hardwaresupport =  `824059920826499093`
-let vcchat =  `824061207924965416`
-const  OwnerRoleID =  '824063311829925898'
+	const  OwnerRoleID =  '824063311829925898'
 const stafflogs =   '824194262279127060'
-const messagefilterlog = '835519322909573190'
 const DMlog  = '853984661360869386'
-const messagedeletelog = '825774127661973545' 
-const bannedlog = '824194262279127060'
- const messageeditlog = '825774068313358346'
-const Nicknamelog = '825773983000690698'
-const roleaddedremoved = '825785679220703243'
-const unbannedlog = '824194262279127060'
-const inviteslog = '833815923457654844' 
-const welcome = '824060103119470622'
-const joined = '824319260540010557'
-const left = '824321468279947275'
+
 
 
 const fs = require('fs');
@@ -43,13 +23,6 @@ const discord = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone' });
 
 const { Player } = require('discord-player');
-
-const { swears }  = require('./swears.json');
-
-const {everyone} = require(`./Everyone.json`)
-
-const {dcinvites} = require(`./dcinvites.json`)
-
 
 
 
