@@ -89,9 +89,9 @@ fs.readdirSync('./commands').forEach(dirs => {
 client.on('guildMemberAdd', (message) => {
 	client.member.send(`please verificate that you are not a robot  by sending me back these numbers:  ${member.id}`)
 
-	if (message.content = member.id) {
+	if (message.content.includes(member.id)) {
 
-		member.role.add('testvalidation')
+		member.role.add('981614363653865542')
 	}
 });
 
