@@ -1,17 +1,7 @@
 module.exports = (client, message, track) => {
-
     const queue = client.player.getQueue(message);
 
-
-  
-   
-
-      
-
-   
-
     console.log(`${new Date }---playing:--- ${track.title}---${track.requestedBy.username}`);
-
     message.channel.send({
         embed: {
             color: 'RED',
@@ -24,23 +14,9 @@ module.exports = (client, message, track) => {
                 {name: "how many songs in the list:" , value:queue.tracks.length },
                 {name: "playing in channel:", value:message.member.voice.channel.name},
                 { name: 'length', value: client.player.createProgressBar(message, { timecodes: true }), }
-                
-            
-                
-
-              
-                
-               
-               
             ],
             thumbnail: { url: track.thumbnail },
             timestamp: new Date(),
         },
     });
-
-
-
-
 };
-
-

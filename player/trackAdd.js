@@ -1,6 +1,4 @@
 module.exports = (client, message, queue, track) => {
-   
-
     message.channel.send({
         embed: {
             color: 'PURPLE',
@@ -12,13 +10,5 @@ module.exports = (client, message, queue, track) => {
             timestamp: new Date(),
         },
     });
-
-
-
     console.log(`${new Date }---added:---${track.title}---${track.requestedBy.username}`);
-
-
-
-
-
 };

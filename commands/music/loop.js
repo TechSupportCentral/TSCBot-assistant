@@ -5,24 +5,11 @@ module.exports = {
     utilisation: '{prefix}loop',
 
     execute(client, message, args,track) {
-        
-        
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - You're not in a voice channel !`);
-
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - You are not in the same voice channel !`);
-
         if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No music currently playing !`);
 
-
-       
-
-
-
-
-
         console.log(`${new Date }---repeat set:------${message.member}`);
-
-        
 
         if (args.join(" ").toLowerCase() === 'queue') {
             if (client.player.getQueue(message).loopMode) {

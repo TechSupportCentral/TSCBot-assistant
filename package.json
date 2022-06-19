@@ -1,9 +1,9 @@
 {
-  "name": "TEG",
+  "name": "TSC-assistant",
   "version": "0.0.1",
-  "homepage": "https://discord.gg/6jEY933Cty",
-  "repository": "https://github.com/TechEmpireGermany/TEGBot.git",
-  "bugs": "https://github.com/TechEmpireGermany/TEGBot/issues",
+  "homepage": "https://www.techsupportcentral.cf",
+  "repository": "https://github.com/TechSupportCentral/TSCBot-assistant",
+  "bugs": "https://github.com/TechSupportCentral/TSCBot-assistant/issues",
   "dependencies": {
     "@derhuerst/http-basic": "^8.2.1",
     "@discordjs/collection": "^0.1.6",
@@ -159,7 +159,7 @@
     "ytdl-core": "^4.8.3"
   },
   "bin": {
-    "TEG": "./index.js"
+    "TSC-assistant": "./index.js"
   },
   "main": "index.js",
   "scripts": {

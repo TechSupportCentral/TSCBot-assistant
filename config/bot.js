@@ -4,17 +4,16 @@ module.exports = {
         error: ':warning:',
         queue: ':bar_chart:',
         music: ':musical_note:',
-        success: ':white_check_mark:',
+        success: ':white_check_mark:'
     },
+
+    mongo: 'insert MongoDB URI here',
 
     discord: {
-        token: 'GET',
+        token: 'insert token here',
         prefix: '!',
-        activity: 'TSC',
+        activity: 'TSC'
     },
 
-
-
-
-    filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],
+    filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding']
 };

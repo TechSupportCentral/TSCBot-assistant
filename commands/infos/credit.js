@@ -5,37 +5,25 @@ module.exports = {
     utilisation: '{prefix}credit',
 
     execute(client, message) {
-        
         message.delete();
-        
         message.channel.send({
             embed: {
                 color: 'PURPLE',
                 author: { name: "credits" },
                 fields: [
-                   {name: "Py-mainbot" , value: "Developed by BenTheTechGuy"},
-                   {name: "Py assistant (Music ,Staff activity Tracking, credits,Tickets)  " , value : "by Philipp" },
-                   {name: "Bot hosting" , value : "by Philipp"}
-            
+                   {name: "Main bot (Python)", value: "by BenTheTechGuy"},
+                   {name: "Assistant Bot (Javascript); handles music, staff activity tracking, credits, and tickets", value: "by Philipp" },
+                   {name: "Bot hosting", value: "by BenTheTechGuy"}
                 ],
+        }
+    })
 
-                },
-    
-      
-        })
-
-       
-
-        message.channel.send({
-            embed: {
-                color: 'PURPLE',
-                author: { name: "Github" },
-                fields: [
-                    {name: 'Link:' , value: "https://github.com/TechSupportCentral"}
-
-                ]
-
-            },
-
-
-        })}}
+    message.channel.send({
+        embed: {
+            color: 'PURPLE',
+            author: { name: "GitHub" },
+            fields: [
+                {name: 'Link:' , value: "https://github.com/TechSupportCentral"}
+            ]
+        },
+    })}}
